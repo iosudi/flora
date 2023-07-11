@@ -198,7 +198,7 @@ button {
 }
 
 
-@media (max-width: 412px) {
+@media (max-width: 415px) {
     #land .title {
         font-size: smaller;
     }
