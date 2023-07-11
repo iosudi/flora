@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400&family=Montserrat:wght@100;400&family=Poppins:wght@400;500;600;700;900&family=Satisfy&family=Ubuntu:wght@300;400;500&display=swap');
+
+* {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: #0f0f0f;
+    list-style: none;
+}
+
+
+h1 {
+    width: 50%;
+    font-size: 6em;
+    font-weight: 600;
+    font-family: 'Montserrat', sans-serif;
+}
+
+
+p {
+    width: 36%;
+    padding-top: 2%;
+    font-size: 1.4em;
+    color: #383838;
+}
+
+/* navigation section */
+
+nav {
+    position: absolute;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 1% 10%;
+    font-size: 1.3em;
+}
+
+
+.brand {
+    font-size: 1.8em;
+    font-weight: 700;
+    z-index: 2;
+}
+
+
+.nav-items {
+    display: flex;
+    gap: 4em;
+    margin-left: 35%;
+    z-index: 5;
+}
+
+
+.nav-items a {
+    color: #0f0f0f;
+    font-weight: 500;
+}
+
+.toggle {
+    z-index: 3;
+    position: absolute;
+    right: 0;
+    margin-right: 2em;
+    font-size: 1.8em;
+    cursor: pointer;
+    display: none;
+}
+
+/* Land section */
+
+#land .title {
+    display: flex;
+    flex-direction: column;
+    padding: 10% 0% 0% 15%;
+    z-index: 1;
+
+}
+
+
+button {
+    margin-top: 2%;
+    padding: 15px;
+    width: 13rem;
+    border: 0px;
+    border-radius: 5px;
+    background: #0f0f0f;
+    color: #F3F3F1;
+    font-size: 1.1em;
+    font-weight: 500;
+}
+
+
+.icons {
+    margin-top: 5em;
+    font-size: 2em;
+    display: flex;
+    gap: .7em;
+}
+
+#land .image {
+    position: absolute;
+    right: 0;
+    width: fit-content;
+    background-color: #F3F3F1;
+}
+
+
+#land img {
+    width: 60em;
+}
+
+/* media query */
+
+@media (max-width:1410px) {
+
+    .title {
+        margin-top: 5em;
+    }
+
+
+    .title h1{
+        font-size: 5em;
+    }
+
+
+    #land .image img{
+        width: 55em;
+    }
+
+
+    .icons {
+        margin-top: 4em;
+    }
+}
+
+
+@media (max-width: 1250px) {
+
+    .title h1 {
+        font-size: 4em;
+    }
+
+
+    .title p {
+        font-size: 1.2em;
+        width: 22em;
+    }
+}
+
+
+@media (max-width: 1241px) {
+
+    .title button{
+        padding: 13px;
+    }
+
+    #land .image img{
+        width: 52em;
+    }
+}
+
+
+@media (max-width: 1202px) {
+    .toggle{
+        display: block;
+        z-index: 3;
+    }
+    
+    .nav-items {
+        display: none;
+    }
+
+    h1 {
+        width: 9em;
+    }
+
+    #land .title {
+        padding: 10% 0% 0% 0%;
+        font-size: larger;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    #land .image {
+        display: flex;
+        position: relative;
+        margin-top: 5em;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    
+}
